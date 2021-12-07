@@ -14,6 +14,12 @@ while twinkle_loop<0:
         twinkle_loop-=1
 
 # Slow Walk
+
+step = 0.5
+count = 0
+star = Star(pwm=True)
+leds = star.leds
+
 while True:
     if(count%26!=0):
         leds[count%26].on()
