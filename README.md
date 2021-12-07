@@ -51,12 +51,12 @@ Login as your local adiministrator (pi or equivalent).  Then from your terminal 
 - useradd --system --shell /usr/sbin/nologin --home /opt/christmas christmas
 - mkdir /opt/christmas
 
-No we need to make sure that the users has enough permissions to access the GPIO, so we need to add it to some groups.  **DO NOT ADD THEM INTO THE SUDO GROUP**
+Now we need to make sure that the user has enough permissions to access the GPIO, so we need to add it to some groups.  **DO NOT ADD THEM INTO THE SUDO GROUP**
 - usermod -a -G dialout,cdrom,audio,video,plugdev,games,input,netdev,spi,i2c,gpio christmas
 
 That will ensure it has access to the various interfaces, but no elevated permissions.
 
-No lets go to the christmas users home area and clone the repository, this assumes you have git and all the necessary pre-requisites for using the christmas star already installed.
+Now lets go to the christmas users home area and clone the repository, this assumes you have git and all the necessary pre-requisites for using the christmas star already installed.
 - cd /opt/christmas
 - git clone https://github.com/EnvillePlease/Programmable-Christmas-Star
 
