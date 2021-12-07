@@ -47,7 +47,7 @@ Let us know how you get on with the Star and we hope you have a Merry Christmas.
 I have added an additional directory called Christmas-Service to this forked version of the original repo.  This will allow you to setup a routine (example one included in the folder) that automatically starts when the pi is booted.  Simply follow the instructions below to set up.
 
 Login as your local adiministrator (pi or equivalent).  Then from your terminal type following to setup a service user called christmas and its associated home area.
-- sudo -s to drop into root
+- sudo -s
 - useradd --system --shell /usr/sbin/nologin --home /opt/christmas christmas
 - mkdir /opt/christmas
 
